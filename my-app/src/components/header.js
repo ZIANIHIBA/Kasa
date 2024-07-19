@@ -8,13 +8,13 @@ export default function  Header  (){
     return (  
     <div className="nav"> 
          <img src={logoKasa} alt='logo la kasa'/>
-         <nav>
-        
-            <NavLink to='/Accueil' className={({isActive}) =>(isActive? "underline":"")} >
+         <nav className="nav-link">
+         
+            <NavLink to='/Accueil' className={({isActive}) =>(isActive? "underline":"notunderline")} >
             Accueil
             </NavLink>
-            <NavLink to='/Apropos'className={({isActive}) =>(isActive? "underline":"")}>
-            <li>A propos</li>
+            <NavLink to='/Apropos'className={({isActive}) =>(isActive? "underline":"notunderline")}>
+            A propos
             </NavLink>
     
     </nav>

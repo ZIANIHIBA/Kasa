@@ -19,19 +19,22 @@ width: 80px;
 }
 .nav-link{
   display: flex;
-  list-style: none;
+
 }
-.nav-link li {
+.nav-link a {
   padding: 15px;
   font-weight: 400;
 }
-.nav-link a{
-  text-decoration: none;
+.notunderline{
+  text-decoration: none; 
  
 }
  .underline{
   text-decoration: underline;
 }
+
+
+
 /*footer*/
 .footer{
   display: flex;
@@ -68,10 +71,29 @@ left:340px;
 }
 /*posts*/
 .posts{
-  height: 830px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:35px;
   background-color: #F6F6F6;
   margin-top: 25px;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
+ 
   width: 90%;
+}
+.post{
+  position: relative;
+}
+.post img {
+  width: 320px;
+  height: 250px;
+}
+.post h2{
+  font-size: 16px;
+  max-width: 300px;
+  position: absolute;
+  bottom: 10px;
+  left:10px;
+
 }
