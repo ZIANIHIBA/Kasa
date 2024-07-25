@@ -1,16 +1,20 @@
 
 *{
-  margin: 0;
   box-sizing: border-box;
   object-fit: fill;
 }
+html{
+  box-sizing: border-box;
+
+}
+
+
 /*header*/
 .nav{
   display: flex;
   justify-content: space-between;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+
+  margin: 0 4%;
  
 }
 .nav img{
@@ -61,6 +65,7 @@ background-color: black;
   width: 90%;
   border-radius: 20px;
   opacity: 0.5;
+  
 
 
 }
@@ -96,4 +101,74 @@ left:340px;
   bottom: 10px;
   left:10px;
 
+}
+/*fiche logement*/
+.Fichelogement{
+ display: flex;
+ flex-direction: column;
+ margin: 0 8%;
+
+ align-items: center;
+
+
+}
+.Slide{
+
+  position: relative;
+}
+.ArrowRight{
+  position :absolute;
+  top:50%;
+  right:0;
+}
+.ArrowLeft{
+  position :absolute;
+  top:50%;
+  left:0;
+}
+.ImageLogement{
+
+height: 415px;
+
+width: 1150px;
+}
+.SlideCounter{
+  position:absolute;
+  bottom: 20px;
+  left:50%;
+}
+/*collapse*/
+.collapse{
+  display: flex;
+  justify-content: space-between;
+  gap:300px;
+  width: 90%;
+
+
+}
+.Btncollapse{
+  display: flex;
+width:300px;
+ background-color: #FF6060;
+ margin: 10px 0;
+
+  align-items: center;
+  }
+.expandarrow{
+
+width: 10px;
+height: 10px;
+}
+.arrowdown{
+  
+}
+/** Rating****/
+.Staractive{
+  color: #FF6060;
+}
+.StarInactive{
+
+  
+
+   color:#E3E3E3; 
 }

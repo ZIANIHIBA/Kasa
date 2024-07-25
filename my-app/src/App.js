@@ -5,10 +5,10 @@ import Footer from './components/footer.js'
 import Logement from "./pages/Logement.js"
 import Apropos from './pages/Apropos.js'
 import Accueil from './pages/Accueil.js';
-
+import Error from './pages/Error.jsx'
 function App() {
   return (
-    <div>
+    
      <BrowserRouter>
      <Header/>
      <Routes>
@@ -17,12 +17,12 @@ function App() {
       <Route path='/Apropos' element={<Apropos/>}/>
       {/* <Route path='/Logements' element={<Apropos/>}/> */}
        <Route path='/logement/:id' element={<Logement/>}/> 
-      
+       <Route path="/*" element={<Error />} />
      </Routes>
      <Footer/>
      </BrowserRouter>
      
-    </div>
+
   );
 }
 
