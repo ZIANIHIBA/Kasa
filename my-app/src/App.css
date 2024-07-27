@@ -7,27 +7,35 @@ html{
   box-sizing: border-box;
 
 }
-
+li{
+  list-style: none;
+}
+a  {
+  color:white;
+}
 
 /*header*/
 .nav{
   display: flex;
   justify-content: space-between;
 
-  margin: 0 4%;
- 
+  width: 90%;
+  margin: 22px auto;
+
 }
 .nav img{
 
-width: 80px;
+width: 120px;
 }
 .nav-link{
   display: flex;
+ 
 
 }
 .nav-link a {
-  padding: 15px;
+  padding-left: 20px;
   font-weight: 400;
+  color: black;
 }
 .notunderline{
   text-decoration: none; 
@@ -57,22 +65,34 @@ background-color: black;
 
 }
 /*titre*/
-
-.titre img{
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
+.titre{
+  position: relative;
   width: 90%;
+  text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+.titre img{
+
+  
+width: 100%;
   border-radius: 20px;
-  opacity: 0.5;
+opacity:  0.6;
   
 
 
 }
 .titre h1{
   position:absolute;
-top:180px;
-left:340px;
+  
+left:50%;
+top:40%;
+transform: translate(-50%,-50%);
+
+
+  
+
 }
 /*posts*/
 .posts{
@@ -80,19 +100,22 @@ left:340px;
   flex-wrap: wrap;
   gap:35px;
   background-color: #F6F6F6;
-  margin-top: 25px;
+  margin-top: 55px;
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
- 
+ padding: 40px 0;
   width: 90%;
+  border-radius: 20px;
 }
 .post{
   position: relative;
+  width: 29%;
 }
 .post img {
-  width: 320px;
-  height: 250px;
+ width: 100%;
+  height: 300px;
+  border-radius: 10px;
 }
 .post h2{
   font-size: 16px;
@@ -106,15 +129,18 @@ left:340px;
 .Fichelogement{
  display: flex;
  flex-direction: column;
- margin: 0 8%;
+ margin: 30px 8%;
 
  align-items: center;
 
 
 }
-.Slide{
 
+.Slide{
+  margin: 0 ;
+width: 100%;
   position: relative;
+ 
 }
 .ArrowRight{
   position :absolute;
@@ -129,37 +155,73 @@ left:340px;
 .ImageLogement{
 
 height: 415px;
+box-sizing: border-box;
+width: 100%;
+border-radius: 15px;
 
-width: 1150px;
 }
 .SlideCounter{
   position:absolute;
   bottom: 20px;
   left:50%;
 }
+.logement{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap:140px;
+}
+.logement h2{
+  color: #FF6060;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
 /*collapse*/
 .collapse{
   display: flex;
   justify-content: space-between;
   gap:300px;
-  width: 90%;
-
-
+  width: 100%;
 }
+
+
+
 .Btncollapse{
-  display: flex;
-width:300px;
+
+width:48%;
  background-color: #FF6060;
  margin: 10px 0;
-
+ justify-content:space-between ;
+height: 40px;
   align-items: center;
+  font-weight: 600;
+     color: white;
+     border-radius: 10px;
+     padding: 0 8px;
+  }
+  .Btncollapse p{
+    display: inline;
+    padding-right: 70%;
+  }
+  .listcolapse{
+   
+    height:100px;
+    background-color:#F6F6F673;
+    color: black;
+    ;
   }
 .expandarrow{
 
 width: 10px;
 height: 10px;
+transition:200ms ;
+ rotate: 180deg;
 }
-.arrowdown{
+.arrowup{
+  width: 10px;
+  height: 10px;
   
 }
 /** Rating****/
@@ -171,4 +233,56 @@ height: 10px;
   
 
    color:#E3E3E3; 
+}
+.ratingtag{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*****errorpage*****/
+.errorpage{
+  color:#FF6060;
+  display: flex;
+  flex-direction: column;
+justify-content:center;
+  align-items: center;
+ 
+}
+.errorpage h2 {
+margin:55px 0;
+font-size: 139px;
+}
+.errorpage p{
+  font-size: 28px;
+  
+}
+.errorpage a{
+  margin:60px 0;
+}
+/********tag*****/
+.Btntag{
+  background-color:#FF6060;
+  border-radius: 25px;
+  color: white;
+  border: none;
+  padding: 8px 23px;
+  margin-right: 20px;
+}
+.ratingtag{
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/******Host************/
+.Host{
+display: flex;
+align-items: center;
+color:#FF6060;
+gap:8px
+}
+.Host img{
+  border-radius: 50%;
+  width: 70px;
 }

@@ -1,5 +1,5 @@
 
-import Titre from '../components/titre.js'
+import Titre from '../components/Titre.js'
 import Post from '../components/Post.js'
 import datas from"../data/logements.json"
 import  "../App.css"

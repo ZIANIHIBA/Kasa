@@ -1,5 +1,7 @@
 import expande_arrow from "../images/expande_arrow.png";
 import { useState } from "react";
+
+
 import "../App.css"
 
 export default function Collapse({title,content}){
@@ -9,22 +11,21 @@ const[open , setOpen]=useState(false);
 }
 // console.log(content)
 return (
-    <div>
+
 <div className="Btncollapse">
 
-<h2> {title} </h2>
-<img src={expande_arrow} className={open?"expandarrow":"arrowdown"} alt="" onClick={display}/>
+<p> {title} </p>
+<img src={expande_arrow} className={open?"expandarrow":"arrowup"} alt="" onClick={display}/>
 
- </div> 
- <> 
+ 
+ 
 {  Array.isArray(content) ?
-(open && <ul>{content.map((equipement,index)=> (<li key={index}> {equipement} </li>))}</ul> )
+(open && <ul className="listcolapse">{content.map((equipement,index)=> (<li key={index}> {equipement} </li>))}</ul> )
  :(  open &&
 
   ( <div> {content} </div>)    ) 
  }
     
-</>
  </div> 
 
 )
