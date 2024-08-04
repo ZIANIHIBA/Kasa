@@ -23,18 +23,20 @@ return(
         <div>
         <h2> {logement.title} </h2>
         <p>{logement.location} </p>
+        <Tags className="ratingtag" tagtitle={logement.tags} />
         </div>
+
+
         <div className="Host">
+            <div className="Hostname"> 
         <p>{logement.host.name}</p>
         <img src={logement.host.picture} alt="ee"></img>
         </div>
-        
-        </div>
-        <div className="ratingtag">
-        <Tags tagtitle={logement.tags} />
         <Rating props={logement.rating} />
+        </div>
         
         </div>
+        
     
         <div className="collapse">
         <Collapse title="Description" content={logement.description}/>

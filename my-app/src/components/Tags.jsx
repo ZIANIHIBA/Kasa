@@ -3,7 +3,7 @@ export default function Tags ({tagtitle }){
 
 return (
 
-    <div>
+    <div className='tag'>
  
  { 
     // Array.isArray(tagtitle)&&<button> {tagtitle.map((tag)=>tag)} </button>

@@ -3,8 +3,17 @@
   box-sizing: border-box;
   object-fit: fill;
 }
+#root{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+body{
+  box-sizing: border-box;
+}
 html{
   box-sizing: border-box;
+  margin: 0 ;
 
 }
 li{
@@ -21,6 +30,7 @@ a  {
 
   width: 90%;
   margin: 22px auto;
+ 
 
 }
 .nav img{
@@ -46,7 +56,6 @@ width: 120px;
 }
 
 
-
 /*footer*/
 .footer{
   display: flex;
@@ -54,6 +63,9 @@ width: 120px;
 justify-content: center;
 align-items: center;
 background-color: black;
+/* width: 90%;  */
+width: 100%;
+margin: auto;
 }
 .footer img{
  width: 70px;
@@ -68,6 +80,7 @@ background-color: black;
 .titre{
   position: relative;
   width: 90%;
+  height: 223px;
   text-align: center;
  margin-left: auto;
  margin-right: auto;
@@ -119,7 +132,7 @@ transform: translate(-50%,-50%);
 }
 .post h2{
   font-size: 16px;
-  max-width: 300px;
+  width: 60%;
   position: absolute;
   bottom: 10px;
   left:10px;
@@ -129,8 +142,8 @@ transform: translate(-50%,-50%);
 .Fichelogement{
  display: flex;
  flex-direction: column;
- margin: 30px 8%;
-
+ margin: 30px 0;
+width: 90%;
  align-items: center;
 
 
@@ -164,12 +177,14 @@ border-radius: 15px;
   position:absolute;
   bottom: 20px;
   left:50%;
+  color: white;
 }
 .logement{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  gap:140px;
+ 
 }
 .logement h2{
   color: #FF6060;
@@ -180,34 +195,36 @@ border-radius: 15px;
 
 /*collapse*/
 .collapse{
-  display: flex;
+display: flex;
   justify-content: space-between;
   gap:300px;
   width: 100%;
+}
+.collapsediv  {
+  width: 89%;
 }
 
 
 
 .Btncollapse{
+display: flex;
 
-width:48%;
  background-color: #FF6060;
  margin: 10px 0;
+ 
  justify-content:space-between ;
 height: 40px;
   align-items: center;
   font-weight: 600;
      color: white;
-     border-radius: 10px;
+     border-radius: 5px;
      padding: 0 8px;
   }
-  .Btncollapse p{
-    display: inline;
-    padding-right: 70%;
-  }
+  
+  
   .listcolapse{
    
-    height:100px;
+    height:fit-content;
     background-color:#F6F6F673;
     color: black;
     ;
@@ -262,15 +279,14 @@ font-size: 139px;
 /********tag*****/
 .Btntag{
   background-color:#FF6060;
-  border-radius: 25px;
+  border-radius:0.5rem;
   color: white;
   border: none;
-  padding: 8px 23px;
-  margin-right: 20px;
+  padding: 8px 16px;
+  margin-right: 5px;
 }
 .ratingtag{
-  display: flex;
-  width: 100%;
+ 
   margin-bottom: 10px;
 }
 
@@ -278,11 +294,104 @@ font-size: 139px;
 /******Host************/
 .Host{
 display: flex;
-align-items: center;
+flex-direction: column;
+gap:26px;
+align-items:flex-end;
 color:#FF6060;
-gap:8px
+
 }
 .Host img{
   border-radius: 50%;
   width: 70px;
 }
+.Hostname{
+  display: flex;
+  gap:3px
+}
+/*****apropos*******/
+.apropos{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgapropos  {
+  display: block;
+width: 100%;
+height: 177px;
+ border-radius: 20px;
+ object-fit:cover;
+margin-left: auto;
+margin-right: auto;  
+
+}
+.colapseapropos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ width:inherit;
+ margin-top: 15px;
+}
+/***reponsive***/
+@media (max-width:768px) {
+.tag{
+
+}
+  .posts{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: white;
+}
+.post{
+  width: 100%;
+}
+.footer p{
+margin-top:0;
+ width: 110px;
+ text-align: center;
+}
+.titre{
+  height: 111px;
+}
+.logement{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+.Host{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  
+ 
+  width: 100%;
+}
+.star{
+  text-align: center;
+}
+.collapse{
+  display: flex;
+  flex-direction: column;
+gap: 20px;
+}
+.collapsediv{
+  width: 100%;
+}
+.tag{
+  
+display: flex;
+overflow-x: auto;
+
+}
+.imgapropos{
+ 
+  
+}
+
+
+ }

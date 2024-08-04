@@ -1,7 +1,54 @@
-
-
+import montagne from "../images/montagne.png"
+// import expande_arrow from "../images/expande_arrow.png";
+// import { useState } from "react";
+import '../App.css';
+import Collapse from "../components/Collapse"; 
 export default function Apropos (){
-    return(
-   <div>kjljlk</div>
+// const  [open ,useopen]=useState(false)
+// const Display=()=>useopen(!open)
+    const array=[
+       { title:'fiabilité', 
+         content:'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',}
+    
+          ,{ title: 'Respect',
+         content:
+         'La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.'
+           }
+    ,{ 
+        title: 'Service',
+         content:
+"Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.",
+},
+{
+title: 'Sécurité',
+content:
+"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.",
+},
+    
+        ]
+     return ( <div className="apropos" > 
+
+    <img className=" imgapropos" src={montagne} alt="montagne"/>
+    <div className="colapseapropos">  {  
+    array.map((Element)=>(<Collapse key={Element.title}  title={Element.title} 
+content={Element.content}     /> ) 
+        )
+    } 
+        </div>
+    {/* {
+        array.map((Element,index)=>(<div className="Btncollapse" key={index}> <p> {Element.title} </p>
+             <img src={expande_arrow} className="expandarrow"alt="" onClick= {Display} /> </div> 
+              
+        )
+        )
+    
+    } */}
+   {/* {(open && array.map ((Element,index)=>(<div key={index}> {Element.content} </div>)))} */}
+    
+    </div>
+    
+
+
+  
     )
 }

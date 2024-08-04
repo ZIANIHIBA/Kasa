@@ -4,7 +4,7 @@ import{FaStar}  from 'react-icons/fa'
 export default function Rating ({props}){
   
     const stars=[1,2,3,4,5]
-    return(<div>
+    return(<div className="star">
     {stars.map ((star)=>
        props>=star?
             (<FaStar key={star.toString()} className="Staractive"/>)
