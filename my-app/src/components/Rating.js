@@ -11,12 +11,6 @@ export default function Rating ({props}){
        :(<FaStar key={star.toString()}  className="StarInactive"/>) )}
        </div>
          )
-        // return(<div>
-        //     {stars.map ((star)=>
-          
-        //          (<FaStar key= {star.toString()} className= {  star>=props? "StarInactive":"Staractive"}/>)
-        //   ) }
-        //     </div>
-        //     )
+       
         
 }

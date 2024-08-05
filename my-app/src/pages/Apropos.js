@@ -1,11 +1,9 @@
 import montagne from "../images/montagne.png"
-// import expande_arrow from "../images/expande_arrow.png";
-// import { useState } from "react";
+
 import '../App.css';
 import Collapse from "../components/Collapse"; 
 export default function Apropos (){
-// const  [open ,useopen]=useState(false)
-// const Display=()=>useopen(!open)
+
     const array=[
        { title:'fiabilité', 
          content:'Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.',}
