@@ -4,7 +4,7 @@ import Post from '../components/Post.js'
 import datas from"../data/logements.json"
 import  "../App.css"
 import{Link} from "react-router-dom"
-// import { useState } from 'react'
+
 
 export default function Accueil(){
     const logements=datas.map ((data) =>{

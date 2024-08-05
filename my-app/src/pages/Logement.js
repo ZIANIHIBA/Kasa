@@ -30,7 +30,7 @@ return(
         <div className="Host">
             <div className="Hostname"> 
         <p>{logement.host.name}</p>
-        <img src={logement.host.picture} alt="ee"></img>
+        <img src={logement.host.picture} alt="proprietaire du logement"></img>
         </div>
         <Rating props={logement.rating} />
         </div>

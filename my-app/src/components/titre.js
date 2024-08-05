@@ -5,7 +5,7 @@ export default function Titre (){
     return(
         <div className='titre'>
         <img src={plage} alt=' plage'/>
-        <h1>chez vous ,partout et ailleurs</h1>
+        <h1>Chez vous ,partout et ailleurs</h1>
         </div>
     )
 }

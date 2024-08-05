@@ -35,15 +35,8 @@ content={Element.content}     /> )
         )
     } 
         </div>
-    {/* {
-        array.map((Element,index)=>(<div className="Btncollapse" key={index}> <p> {Element.title} </p>
-             <img src={expande_arrow} className="expandarrow"alt="" onClick= {Display} /> </div> 
-              
-        )
-        )
     
-    } */}
-   {/* {(open && array.map ((Element,index)=>(<div key={index}> {Element.content} </div>)))} */}
+   
     
     </div>
     

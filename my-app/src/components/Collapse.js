@@ -8,8 +8,7 @@ export default function Collapse({title,content}){
 const[open , setOpen]=useState(false);
  const display =()=>{
     setOpen(!open)
-}
-// console.log(content)
+} 
 return (
 <div className='collapsediv' >
 <div className="Btncollapse">

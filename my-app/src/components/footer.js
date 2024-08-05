@@ -4,7 +4,7 @@ export default function Footer (){
     return (
         <div className="footer"> 
         <img src={LOGO} alt="logo site"/>
-        <p>c 2020.All rights reserved</p>
+        <p>© 2020. All rights reserved</p>
         </div>
     )
 }
