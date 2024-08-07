@@ -1,5 +1,4 @@
 * {
-
   object-fit: fill;
 }
 #root {
@@ -8,15 +7,14 @@
   align-items: center;
   height: inherit;
   justify-content: space-between;
- 
 }
 body {
   box-sizing: border-box;
   height: 100vh;
 }
 html {
-height: 100vh;
-overflow-x: auto;
+  height: 100vh;
+  overflow-x: auto;
   margin: 0;
 }
 li {
@@ -179,7 +177,7 @@ a {
 .collapse {
   display: flex;
   justify-content: space-between;
-  gap: 300px;
+  gap: 80px;
   width: 100%;
 }
 .collapsediv {
@@ -283,8 +281,7 @@ a {
   width: 90%;
   display: flex;
   flex-direction: column;
-   align-items: center; 
-  
+  align-items: center;
 }
 .imgapropos {
   display: block;
@@ -304,8 +301,6 @@ a {
 }
 /***reponsive***/
 @media (max-width: 768px) {
-  .tag {
-  }
   .posts {
     display: flex;
     flex-direction: column;
@@ -352,8 +347,6 @@ a {
   .tag {
     display: flex;
     overflow-x: auto;
-  }
-  .imgapropos {
   }
 
   /* .titre h1{
