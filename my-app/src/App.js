@@ -15,7 +15,7 @@ function App() {
       <Route index element={<Accueil/>}/>
       <Route path='/Accueil' element={<Accueil/>}/>
       <Route path='/Apropos' element={<Apropos/>}/>
-      {/* <Route path='/Logements' element={<Apropos/>}/> */}
+      
        <Route path='/logement/:id' element={<Logement/>}/> 
        <Route path="/*" element={<Error />} />
      </Routes>
