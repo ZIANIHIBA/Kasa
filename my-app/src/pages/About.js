@@ -1,8 +1,8 @@
 import montagne from "../images/montagne.png";
-
 import "../App.css";
 import Collapse from "../components/Collapse";
-export default function Apropos() {
+
+export default function About() {
   const array = [
     {
       title: "fiabilité",
