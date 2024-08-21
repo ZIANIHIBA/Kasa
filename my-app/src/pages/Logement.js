@@ -22,7 +22,6 @@ export default function Logement() {
           <p>{logement.location} </p>
           <Tags className="ratingtag" tagtitle={logement.tags} />
         </div>
-
         <div className="Host">
           <div className="Hostname">
             <p>{logement.host.name}</p>

@@ -1,6 +1,5 @@
 import expande_arrow from "../images/expande_arrow.png";
 import { useState } from "react";
-
 import "../App.css";
 
 export default function Collapse({ title, content }) {

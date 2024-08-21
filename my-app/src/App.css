@@ -291,6 +291,8 @@ a {
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
+  filter: brightness(50%);
+ 
 }
 .colapseapropos {
   display: flex;
@@ -348,8 +350,27 @@ a {
     display: flex;
     overflow-x: auto;
   }
+ .colapseapropos{
+  width: 100%;
+ }
+ .posts{
+ padding: 0;
+ }
+ .imgapropos{
+  height: 111px;
+ }
+  
 
-  /* .titre h1{
-  font-size: 18px;
-} */
+  .titre h1{
+  font-size: 20px;
+  margin-left: 20px;
+ 
+
+
+} 
+
+.titre{
+  text-align: left;
+  
+}
 }

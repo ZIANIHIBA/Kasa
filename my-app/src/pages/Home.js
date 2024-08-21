@@ -4,7 +4,7 @@ import datas from "../data/logements.json";
 import "../App.css";
 import { Link } from "react-router-dom";
 
-export default function Accueil() {
+export default function Home() {
   const logements = datas.map((data) => {
     return (
       <Link to={`/Logement/${data.id}`} className="post" key={data.id}>
