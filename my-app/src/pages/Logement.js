@@ -1,10 +1,13 @@
-import { useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import "../App.css";
 import datas from "../data/logements.json";
 import SlideShow from "../components/SlideShow";
 import Collapse from "../components/Collapse";
 import Rating from "../components/Rating";
 import Tags from "../components/Tags";
+import Error from "../pages/Error";
+
+
 const findLogement = (id) => {
   return datas.find((data) => data.id === id);
 };
@@ -13,7 +16,7 @@ export default function Logement() {
   const { id } = useParams();
   const logement = findLogement(id);
 
-  return (
+  return (logement?
     <div className="Fichelogement">
       <SlideShow slides={logement.pictures} />
       <div className="logement">
@@ -39,5 +42,5 @@ export default function Logement() {
         <Collapse title="equipement" content={logement.equipments} />
       </div>
     </div>
-  );
+  : <Error/> );
 }

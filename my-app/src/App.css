@@ -23,7 +23,9 @@ li {
 a {
   color: white;
 }
-
+img{
+  object-fit: cover;
+}
 /*header*/
 .nav {
   display: flex;
@@ -361,7 +363,7 @@ a {
 
   .titre h1 {
     font-size: 22px;
-    
+
     width: 70%;
   }
 
